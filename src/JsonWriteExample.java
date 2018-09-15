@@ -25,7 +25,7 @@ public class JsonWriteExample {
 
 		// writing the JSONObject into a file(info.json)
 		try {
-			FileWriter fileWriter = new FileWriter("/home/martin/Documents/Cursos de spring/workspace/FileTest/info.json");
+			FileWriter fileWriter = new FileWriter("/home/martin/Documents/Cursos de spring/workspace/javaExcercices/info.json");
 			fileWriter.write(jsonObject.toJSONString());
 			fileWriter.flush();
 		} catch (Exception e) {

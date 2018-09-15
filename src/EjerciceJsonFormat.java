@@ -59,7 +59,7 @@ public class EjerciceJsonFormat {
 
 		try {
 			FileWriter fileWriter = new FileWriter(
-					"/home/martin/Documents/Cursos de spring/workspace/FileTest/user.json");
+					"/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json");
 			fileWriter.write(saveJson.toJSONString());
 			fileWriter.flush();
 
@@ -73,7 +73,7 @@ public class EjerciceJsonFormat {
 		JSONParser parser = new JSONParser();
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/Cursos de spring/workspace/FileTest/user.json"));
+					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			
@@ -98,7 +98,7 @@ public class EjerciceJsonFormat {
 		boolean flagExist = Boolean.FALSE;
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/Cursos de spring/workspace/FileTest/user.json"));
+					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			
@@ -132,7 +132,7 @@ public class EjerciceJsonFormat {
 		Double sum = 0d;
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/Cursos de spring/workspace/FileTest/user.json"));
+					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			
