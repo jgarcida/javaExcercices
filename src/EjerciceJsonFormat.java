@@ -68,6 +68,25 @@ public class EjerciceJsonFormat {
 		}
 		System.out.println("Formato json " + saveJson);
 	}
+	
+	public void addUser(JSONObject newObject) {
+		JSONParser parser = new JSONParser();
+		
+		try {
+			Object obj = parser
+					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
+			JSONObject jsonObject = (JSONObject) obj;	
+			JSONArray userList = (JSONArray) jsonObject.get("userTransaction");
+			userList.add(newObject);
+			FileWriter fileWriter = new FileWriter("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json");
+			fileWriter.write(jsonObject.toJSONString());
+			fileWriter.flush();
+
+			
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
 
 	public String listTransactions() {
 		JSONParser parser = new JSONParser();
