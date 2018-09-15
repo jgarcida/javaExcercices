@@ -1,5 +1,6 @@
 # Compiled source #
 ###################
+bin/
 *.com
 *.class
 *.dll
@@ -9,7 +10,7 @@
 *.classpath
 *.project
 *.settings/
-bin/
+
 
 # Packages #
 ############
