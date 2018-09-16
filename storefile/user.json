@@ -1,0 +1,39 @@
+{
+	"userTransaction": [
+		{
+			"date": "2018-09-15",
+			"transaction_id": "73313790-e093-4a80-8a98-ac0ec1a6a4fc",
+			"amount": "50.50",
+			"description": "Joes tacos",
+			"userId": "1"
+		},
+		{
+			"date": "2018-09-15",
+			"transaction_id": "f2e7081a-39e8-487d-ab7d-570c6d40ea2d",
+			"amount": "500",
+			"description": "Joes tacos2",
+			"userId": "1"
+		},
+		{
+			"date": "2018-09-15",
+			"transaction_id": "3769cb17-538f-4519-a203-1ed8042c243e",
+			"amount": "1520.00",
+			"description": "Joes tacos3",
+			"userId": "3"
+		},
+		{
+			"date": "2018-09-15",
+			"transaction_id": "cf26ec6c-9984-4a23-beb7-82267a205bb7",
+			"amount": "1500",
+			"description": "test 2",
+			"userId": "69"
+		},
+		{
+			"date": "2018-09-15",
+			"transaction_id": "19d170cd-f62e-43e1-ad1b-11670880a6ec",
+			"amount": "1500",
+			"description": "test 2",
+			"userId": "7"
+		}
+	]
+}

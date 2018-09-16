@@ -58,8 +58,9 @@ public class EjerciceJsonFormat {
 		saveJson.put("userTransaction", jsonArray);
 
 		try {
-			FileWriter fileWriter = new FileWriter(
-					"/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json");
+			FileWriter fileWriter = new FileWriter("storefile/user.json");
+			/*FileWriter fileWriter = new FileWriter(
+					"/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json");*/
 			fileWriter.write(saveJson.toJSONString());
 			fileWriter.flush();
 
@@ -74,11 +75,11 @@ public class EjerciceJsonFormat {
 		
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
+					.parse(new FileReader("storefile/user.json"));
 			JSONObject jsonObject = (JSONObject) obj;	
 			JSONArray userList = (JSONArray) jsonObject.get("userTransaction");
 			userList.add(newObject);
-			FileWriter fileWriter = new FileWriter("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json");
+			FileWriter fileWriter = new FileWriter("storefile/user.json");
 			fileWriter.write(jsonObject.toJSONString());
 			fileWriter.flush();
 
@@ -92,7 +93,7 @@ public class EjerciceJsonFormat {
 		JSONParser parser = new JSONParser();
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
+					.parse(new FileReader("storefile/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			
@@ -117,7 +118,7 @@ public class EjerciceJsonFormat {
 		boolean flagExist = Boolean.FALSE;
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
+					.parse(new FileReader("storefile/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			
@@ -151,7 +152,7 @@ public class EjerciceJsonFormat {
 		Double sum = 0d;
 		try {
 			Object obj = parser
-					.parse(new FileReader("/home/martin/Documents/CursosDeSpring/workspace/javaExcercices/user.json"));
+					.parse(new FileReader("storefile/user.json"));
 
 			JSONObject jsonObject = (JSONObject) obj;
 			

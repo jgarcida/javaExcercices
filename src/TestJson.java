@@ -8,11 +8,11 @@ public class TestJson {
 	
 	public static void main(String[] args) {
 		EjerciceJsonFormat ejerciceJsonFormat = new EjerciceJsonFormat();
-		/*ejerciceJsonFormat.writeJson();
-		ejerciceJsonFormat.listTransactions();
-		ejerciceJsonFormat.sumAmount("1");
-		ejerciceJsonFormat.searchUser("3");
-	*/	
+		//ejerciceJsonFormat.writeJson();
+		//ejerciceJsonFormat.listTransactions();
+		//ejerciceJsonFormat.sumAmount("1");
+		//ejerciceJsonFormat.searchUser("3");
+	
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("amount", "1500");
 		jsonObject.put("description", "test 2");
@@ -22,11 +22,12 @@ public class TestJson {
 		String date = simpleDateFormat.format(new Date());
 
 		jsonObject.put("date", date);
-		jsonObject.put("userId", "69");
+		jsonObject.put("userId", "7");
 		UUID idOne = UUID.randomUUID();
 		jsonObject.put("transaction_id", idOne.toString());
 		
-		ejerciceJsonFormat.addUser(jsonObject);
+		ejerciceJsonFormat.addUser(jsonObject);	
+		
 	}
 
 }
